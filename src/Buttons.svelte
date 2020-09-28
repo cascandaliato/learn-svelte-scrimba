@@ -26,9 +26,11 @@
   }
 </style>
 
-{#each buttons as button}
-  <button on:click={() => dispatch('click', { value: button.value })}>{button.text}</button>
-{/each}
+<div class="buttons-container">
+  {#each buttons as button}
+    <button on:click={() => dispatch('click', { value: button.value })}> {button.text} </button>
+  {/each}
+</div>
 
 <!-- <button on:click={() => dispatch('click', true)}>show</button>
 <button on:click={() => dispatch('click', false)}>hide</button> -->

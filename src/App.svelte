@@ -96,7 +96,6 @@
   <input type="text" bind:value={name} />
   <h1>{name}, {smileySays}</h1>
   <Face {happyScore} size={storyIndex + 1} />
-  clickHandler
   <Buttons {buttons} on:click={clickHandler} />
 
   <!-- <Buttons
