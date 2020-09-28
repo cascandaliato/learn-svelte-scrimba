@@ -15,7 +15,7 @@
   function clickHandler(e) {
     if (e.detail.value === 'reset') {
       storyIndex = 0;
-      happyIndex = 0;
+      happyScore = 0;
       showHeader = false;
     } else {
       storyIndex += 1;
@@ -92,6 +92,9 @@
   }
 </style>
 
+{#if showHeader}
+  <Header />
+{/if}
 <Container>
   <input type="text" bind:value={name} />
   <h1>{name}, {smileySays}</h1>
