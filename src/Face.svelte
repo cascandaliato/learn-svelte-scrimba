@@ -1,7 +1,9 @@
 <script>
+  export let happyScore = 1;
   export let size = 1;
-  export let index = 0;
-  const faces = ['=)', '=\\', '>:D'];
+
+  const faceList = ['🤬', '😡', '😭', '🙁', '😕', '😐', '🙂', '😀', '😄', '😊', '😘'];
+  $: index = happyScore + 5;
 </script>
 
-<div style="font-size: {size}em">{faces[index]}</div>
+<div style="font-size: {size}em">{faceList[index]}</div>
