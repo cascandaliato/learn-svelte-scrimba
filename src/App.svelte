@@ -18,7 +18,7 @@
       happyIndex = 0;
       showHeader = false;
     } else {
-      storyndex += 1;
+      storyIndex += 1;
       happyScore += e.detail.value;
     }
   }
